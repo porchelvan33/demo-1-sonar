@@ -25,7 +25,7 @@ pipeline {
                             -Dsonar.projectKey=porchelvan-23-demo \
                             -Dsonar.sources=app.js \
                             -Dsonar.host.url=http://localhost:9000 \
-                             sh "sonar-scanner -Dsonar.login=${SONAR_AUTH_TOKEN}"
+                            -Dsonar.login=${SONAR_AUTH_TOKEN}"
                        """
                     }
                 
