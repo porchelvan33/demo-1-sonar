@@ -24,8 +24,8 @@ pipeline {
                     withSonarQubeEnv('SonarQube') {
                         sh """
                             ${scannerHome}/bin/sonar-scanner \
-                            -Dsonar.projectKey=sonarqube-raj \
-                            -Dsonar.projectName=sonarqube-raj \
+                            -Dsonar.projectKey=porchelvan-23-demo \
+                            -Dsonar.projectName=porchelvan23 \
                             -Dsonar.sources=. \
                             -Dsonar.host.url=http://localhost:9000 \
                             -Dsonar.login=squ_aa9cd393d6b49b33932d890ea13d672a312707e0
